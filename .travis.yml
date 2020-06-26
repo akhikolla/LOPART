@@ -1,0 +1,26 @@
+language: r
+
+dist: bionic
+
+apt_packages:
+  - texlive
+  - ghostscript
+  - texlive-fonts-extra
+  - texinfo
+  
+r_packages:
+  - RInside
+  - devtools
+  - roxygen2
+
+after_success:
+  - Rscript -e 'devtools::install();devtools::test()'
+  - Rscript -e "covr::coveralls()"
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+r_github_packages:
+  - jimhester/covr

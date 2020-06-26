@@ -1,0 +1,6 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+.dir-locals.el
+.travis.yml
+README.org
+build.sh
