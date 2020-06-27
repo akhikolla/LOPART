@@ -20,6 +20,16 @@ after_success:
   - Rscript -e 'devtools::install();devtools::test()'
   - Rscript -e "covr::coveralls()"
 
+r_check_args: '--as-cran --use-valgrind'
+
+addons:
+  apt:
+    packages:
+      - valgrind
+      
+env:
+  - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
+
 notifications:
   email:
     on_success: change
