@@ -28,4 +28,4 @@ test_that("deepstate pkg create in lopart", {
 #path <- system.file(package="lopartcheck")
 RcppDeepState::package_deep_harness_compile_run(paths)#"/home/travis/build/akhikolla/LOPART/")
 
-cat(/home/travis/build/akhikolla/LOPART//inst/testfiles/LOPART_interface_log)
+system("cat /home/travis/build/akhikolla/LOPART/inst/testfiles/LOPART_interface_log")
