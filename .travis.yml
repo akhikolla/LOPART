@@ -8,6 +8,10 @@ apt_packages:
   - ghostscript
   - texlive-fonts-extra
   - texinfo
+
+r_github_packages:
+  - akhikolla/testproject
+  - jimhester/covr
   
 r_packages:
   - RInside
@@ -28,7 +32,7 @@ addons:
     packages:
       - valgrind
       
-env: 'VALGRIND_OPTS='--leak-check=full --track-origins=yes'
+env:
   - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
 
 notifications:
@@ -36,6 +40,3 @@ notifications:
     on_success: change
     on_failure: change
 
-r_github_packages:
-  - akhikolla/testproject
-  - jimhester/covr
