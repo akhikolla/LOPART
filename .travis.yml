@@ -16,6 +16,7 @@ r_github_packages:
 r_packages:
   - RInside
   - devtools
+  - nc
   - roxygen2
 
 before_script:
