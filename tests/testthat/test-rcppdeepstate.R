@@ -1,5 +1,5 @@
 library(testthat)
-library(testproject)
+library(RcppDeepState)
 library(nc)
 context("rcppdeepstate")
 
