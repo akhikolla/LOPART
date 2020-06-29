@@ -10,7 +10,7 @@ License: GPL-3
 LinkingTo: Rcpp
 URL: https://github.com/tdhock/LOPART
 BugReports: https://github.com/tdhock/LOPART/issues
-Imports: data.table, Rcpp,RcppDeepState,nc
+Imports: data.table, Rcpp,nc,testproject
 Suggests: ggplot2, testthat
-Remotes: akhikolla/RcppDeepState
+Remotes: akhikolla/testproject
 RoxygenNote: 7.1.0
