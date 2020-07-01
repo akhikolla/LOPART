@@ -41,3 +41,8 @@ notifications:
     on_success: change
     on_failure: change
 
+  
+script: 
+  - |
+    travis_wait 40 R CMD build .
+    travis_wait 40 R CMD check LOPART*tar.gz
