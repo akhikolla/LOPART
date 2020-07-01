@@ -10,7 +10,7 @@ apt_packages:
   - texinfo
 
 r_github_packages:
-  - akhilakolla/RcppDeepState
+  - akhikolla/RcppDeepState
   - jimhester/covr
   
 r_packages:

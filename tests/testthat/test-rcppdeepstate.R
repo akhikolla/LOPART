@@ -3,11 +3,8 @@ library(RcppDeepState)
 library(nc)
 context("rcppdeepstate")
 
-path<-system.file("inst",package="LOPART")
+path<-system.file(package="LOPART")
 print(path)
-print("paths")
-paths <- gsub("/inst","",path)
-print(paths)
 RcppDeepState::deepstate_create_static_lib()
 result <- RcppDeepState::deepstate_pkg_create("/home/travis/build/akhikolla/LOPART")
 test_that("deepstate pkg create in lopart", {
