@@ -10,18 +10,7 @@ apt_packages:
   - texinfo
 
 r_github_packages:
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
-  - akhikolla/RcppDeepState
+  - akhilakolla/RcppDeepState
   - jimhester/covr
   
 r_packages:
@@ -45,7 +34,6 @@ addons:
       - valgrind
       
 env:
-  -'VALGRIND_OPTS='--leak-check=full --track-origins=yes'
   - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
 
 notifications:

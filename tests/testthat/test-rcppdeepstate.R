@@ -16,5 +16,7 @@ test_that("deepstate pkg create in lopart", {
 })
 #path <- system.file(package="lopartcheck")
 RcppDeepState::package_deep_harness_compile_run("/home/travis/build/akhikolla/LOPART")
-
-system("cat /home/travis/build/akhikolla/LOPART/inst/testfiles/LOPART_interface_log")
+result <- user_error_display(system.file("testpkgs/testSAN/inst/testfiles/LOPART_interface_log",package = "RcppDeepState"))
+test_that("deepstate pkg create in lopart", {
+expect_equal(paste0(result$src.file.lines,collapse = ""),"")
+})
