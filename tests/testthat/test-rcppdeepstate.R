@@ -22,7 +22,9 @@ test_that("deepstate create TestHarness",{
   expect_equal(result,"Testharness created!!")
 })
 RcppDeepState::deep_harness_compile_run(insts_path)
-error.list <- RcppDeepState::binary_log_read(system.file("testfiles/LOPART_interface_log",package="LOPART"))
+log_path <- system.file("testfiles/LOPART_interface_log",package="LOPART")
+print(log_path)
+error.list <- RcppDeepState::user_error_display("/home/travis/build/akhikolla/LOPART/inst/testfiles/LOPART_interface_log")
 test_that("log files check",{
   expect_equal(paste0(error.list$src.file.lines,collapse=""),"")
 })
