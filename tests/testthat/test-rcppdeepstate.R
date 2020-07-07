@@ -5,7 +5,7 @@ context("rcppdeepstate")
 
 insts_path <- system.file(package="LOPART")
 print(insts_path)
-insts_path <- gsub("/LOPART.Rcheck/LOPART/inst","",insts_path)
+insts_path <- gsub("/LOPART.Rcheck/LOPART","",insts_path)
 print(insts_path)
 RcppDeepState::make_run()
 RcppDeepState::deepstate_ci_setup(insts_path)
