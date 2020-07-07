@@ -1,5 +1,7 @@
 language: r
 
+sudo: required
+
 dist: bionic
 
 apt_packages:
@@ -8,6 +10,9 @@ apt_packages:
   - ghostscript
   - texlive-fonts-extra
   - texinfo
+
+before_install:
+  - sudo apt-get install build-essential gcc-multilib g++-multilib cmake python3-setuptools libffi-dev z3
 
 r_github_packages:
   - akhikolla/RcppDeepState
